@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #f0f0f0;
+        }
+        section {
+            padding: 50px 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        h2 {
+            font-size: 36px;
+            margin-bottom: 30px;
+            color: #007bff;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .videojuegos,
+        .xbox,
+        .playstation,
+        .nintendo {
+            background-color: #fff;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            margin: 20px auto;
+            overflow: hidden;
+        }
+        .xbox {
+            border-top: 10px solid #107c10;
+        }
+        .playstation {
+            border-top: 10px solid #003087;
+        }
+        .nintendo {
+            border-top: 10px solid #e60012;
+        }
+        .videojuegos img,
+        .xbox img,
+        .playstation img,
+        .nintendo img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            border-bottom: 2px solid #007bff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>¡Bienvenido a la Página Principal de Videojuegos!</h1>
+    </header>
+    <nav>
+        <a href="#videojuegos">Videojuegos</a>
+        <a href="#xbox">Xbox</a>
+        <a href="#playstation">PlayStation</a>
+        <a href="#nintendo">Nintendo</a>
+    </nav>
+    <section id="videojuegos" class="videojuegos">
+        <div class="container">
+            <h2>Videojuegos Destacados</h2>
+            <p>¡Descubre los videojuegos más emocionantes del momento!</p>
+        </div>
+    </section>
+    <section id="xbox" class="xbox">
+        <div class="container">
+            <h2>Xbox</h2>
+            <p>Explora los mejores juegos disponibles para Xbox.</p>
+        </div>
+    </section>
+    <section id="playstation" class="playstation">
+        <div class="container">
+            <h2>PlayStation</h2>
+            <p>Sumérgete en la increíble experiencia de juego en PlayStation.</p>
+        </div>
+    </section>
+    <section id="nintendo" class="nintendo">
+        <div class="container">
+            <h2>Nintendo</h2>
+            <p>Descubre los mundos fantásticos que Nintendo tiene para ofrecerte.</p>
+        </div>
+    </section>
+</body>
+</html>
